@@ -10,3 +10,4 @@ or
 Jonathan Barlow
 barlow@datascience.msstate.edu
 
+Note: to run all this code, you will need to adjust paths for your directory. The files currently default to "jhb11" - the user account of the author.
