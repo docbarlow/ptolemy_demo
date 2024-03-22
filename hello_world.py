@@ -33,6 +33,10 @@ file_path = os.getenv('DATA_FILE_PATH') + "/mnist.npz"
 # load the mnist data
 (x_train, y_train), (x_test, y_test) = mnist.load_data(file_path)
 
+# if this script had internet access in the hpc environment
+# one could just load mnist from keras
+# (x_train, y_train), (x_test, y_test) = mnist.load_data()
+
 # reshape to set up grayscale color channel for each 28x28 image
 x_train = x_train.reshape((x_train.shape[0], 28, 28, 1))
 
