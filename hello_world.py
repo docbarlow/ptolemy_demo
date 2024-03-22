@@ -21,7 +21,7 @@ from tensorflow.keras.datasets import mnist
 # see if we have multiple gpus
 print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('GPU')))
 
-# this is convenient - exit the script immediatley if it isn't using tensor flow
+# this is convenient - exit the script immediately if it isn't using tensor flow
 # built with cuda
 if not tf.test.is_built_with_cuda():
     print("Not built with cuda")
