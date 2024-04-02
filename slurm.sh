@@ -15,10 +15,11 @@
 #SBATCH -p gpu-a100
 
 ## This specifies the account for job charging or accounting. 
-## Here, it's set to an account named 'test'. To find out which
-## accounts are allowed for your user account, just run
-## "sacctmgr list account" and it will list all the valid accounts
-## from which you can choose.
+## Here, it's set to an account named 'test'. To find out
+## which account you should use, run “sacctmgr show association where user=jhb11” and it
+## will show the various accounts available to you. If you get an empty list, be sure
+## to email help@hpc.msstate.edu to request the association of your account with an
+## appropriate “billing account”
 #SBATCH -A test
 
 ## This sets the time limit for the job. 
